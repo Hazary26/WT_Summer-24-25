@@ -1,181 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hazary Bank</title>
-    <style>
-        body {
-            background-color: #d4deeb;
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-        }
+<html>
+<title>AIUB</title>
 
-        .header {
-            text-align: center;
-            color: steelblue;
-            padding: 15px;
-        }
-
-        .header h1 {
-            font-size: 30px;
-            margin-bottom: 5px;
-        }
-
-        .header h2 {
-            font-size: 25px;
-            margin-top: 0;
-        }
-
-        .form-wrapper {
-            width: fit-content;
-            background-color: #ffffff;
-            margin: 20px auto;
-            border: 2px solid #000;
-            padding: 20px;
-        }
-
-        label {
-            display: inline-block;
-            width: 160px;
-            vertical-align: top;
-            padding-top: 8px;
-        }
-
-        input[type="text"],
-        input[type="password"],
-        input[type="date"],
-        input[type="email"],
-        select,
-        textarea {
-            width: 200px;
-            padding: 5px;
-            margin-bottom: 10px;
-        }
-
-        .form-row {
-            margin-bottom: 10px;
-        }
-
-        .form-buttons {
-            margin-top: 15px;
-        }
-
-        input[type="submit"] {
-            padding: 8px 16px;
-            margin-right: 10px;
-        }
-
-        .overflow-box {
-            width: 100px;
-            height: 100px;
-            overflow: scroll;
-            border: 1px solid black;
-            margin: 10px auto;
-            padding: 5px;
-            background-color: #f7f7f7;
-        }
-    </style>
-</head>
 <body>
+    <center style="color:blue;">
+        <h1>Bank Management Sysytem</h1>
+        <h2> Your Trusted Financial Partner</h2>
+    </center>
 
-    <div class="header">
-        <h1>Bank Management System</h1>
-        <h2>Your Trusted Financial Partner</h2>
-    </div>
+    <h3 align="left"> Customer Registration form</h3>
 
-    <div class="form-wrapper">
-        <h3>Customer Registration Form</h3>
-        <form>
-            <div class="form-row">
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname">
-            </div>
+    
+<div>
+    <table align="left">
+        <tr>
+            <td>
+                Full Name: </td>
+            <td><input type="text"></td>
+        </tr>
 
-            <div class="form-row">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob">
-            </div>
+        <tr>
+            <td> Date of Birth</td>
+            <td><input type="date"></td>
+        </tr>
 
-            <div class="form-row">
-                <label>Gender:</label>
-                <input type="radio" name="gender">Male
-                <input type="radio" name="gender">Female
-                <input type="radio" name="gender">Other
-            </div>
+        <tr>
+            <td>
+                Gender:</td>
 
-            <div class="form-row">
-                <label for="marital">Marital Status:</label>
-                <select id="marital">
-                    <option value="">-- Single</option>
-                    <option value="">-- Married</option>
-                </select>
-            </div>
+            <td><input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+            <input type="radio" name="Gender">other</td>
 
-            <div class="form-row">
-                <label for="account">Account Type:</label>
-                <select id="account">
-                    <option value="">-- Savings</option>
-                    <option value="">-- Student</option>
-                    <option value="">-- Business</option>
-                </select>
-            </div>
+        </tr>
 
-            <div class="form-row">
-                <label for="deposit">Initial Deposit:</label>
-                <input type="text" id="deposit">
-            </div>
+        <tr>
+            <td> Marital Status: </td>
+            <td><select>
+                   
+                    <option value="">-- Single
+                    <option value="">-- Married
+                  
+                </select></td>
 
-            <div class="form-row">
-                <label for="mobile">Mobile Number:</label>
-                <input type="text" id="mobile">
-            </div>
 
-            <div class="form-row">
-                <label for="email">Email Address:</label>
-                <input type="text" id="email">
-            </div>
 
-            <div class="form-row">
-                <label for="address">Address:</label>
-                <textarea id="address" rows="2" cols="30"></textarea>
-            </div>
+                <tr>
+            <td> Account Type: </td>
+            <td><select>
+                    
+                    <option value="">-- Savings
+                    <option value="">-- Student 
+                    <option value="">-- Business
+                  
+                </select></td>
 
-            <div class="form-row">
-                <label for="occupation">Occupation:</label>
-                <input type="text" id="occupation">
-            </div>
 
-            <div class="form-row">
-                <label for="nid">National ID (NID):</label>
-                <input type="text" id="nid">
-            </div>
+                <tr>
+            <td>
+               Initial Deposit Amount: </td>
+            <td><input type="text"></td>
+        </tr>
 
-            <div class="form-row">
-                <label for="password">Set Password:</label>
-                <input type="password" id="password">
-            </div>
+         <tr>
+            <td>
+               Mobile Number: </td>
+            <td><input type="text"></td>
+        </tr>
 
-            <div class="form-row">
-                <label for="idproof">Upload ID Proof:</label>
-                <input type="file" id="idproof">
-            </div>
+        
 
-            <div class="form-row">
-                <input type="checkbox" id="agree">
-                <label for="agree" style="display:inline; width:auto;">I agree to the Terms and Conditions</label>
-            </div>
+        <tr>
 
-            <div class="form-buttons">
-                <input type="submit" value="Register">
-                <input type="submit" value="Clear">
-            </div>
-        </form>
-    </div>
+        <tr>
+            <td>
+                Email Address: </td>
+            <td><input type="text"></td>
+        </tr>
 
-    <div class="overflow-box">
-        <p>This is the demo Text to show how overflow works in a small container with a</p>
-    </div>
+         <tr>
+            <td> Address:</td>
+            <td><textarea rows="2" cols="30"></textarea></td>
+        </tr>
+
+
+        <tr>
+            <td>
+                Occupation: </td>
+            <td><input type="text"></td>
+        </tr>
+
+
+        <tr>
+            <td>
+                National ID (NID): </td>
+            <td><input type="text"></td>
+        </tr>
+
+
+        <tr>
+            <td>
+                Set Password: </td>
+            <td><input type="password"></td>
+        </tr>
+
+
+         <tr>
+            <td> Upload ID Proof:</td>
+            <td><input type="file"></td>
+        </tr>
+
+         <tr> 
+          <td> 
+       <input type="checkbox" id="agree" name="agree">
+            I agree to the Terms and Conditions
+          </td>
+         </tr>
+
+
+         <tr> 
+          <td> 
+       <input type="Submit" value="Register" >
+        <input type="Submit" value="Clear">
+          </td>
+           
+         </tr>
+
+ </table>
+
+</div>
+
+
+
+
+
+
+<div class = "div1">
+  <p>This is the demo Text to show how overflow works in a small container with a </p></div>
+
+
+
+ 
+
+
+  
+
 
 </body>
+
+<style>
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:steelblue;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    color:steelblue ;
+}
+
+
+
+body {
+    background-color: #d4deebff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    margin-left: 5px;
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 5px;
+    width: 90%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px;
+}
+
+#para {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+
+
+
+.div1 {
+      
+  width: 100px;
+  height: 100px;
+  overflow: auto;
+  border: 1px solid black;
+  overflow: scroll;
+  margin-top: 5px;
+}
+
+
+
+</style>
+
 </html>
